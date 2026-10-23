@@ -12,8 +12,8 @@
 
 | | |
 | :--- | :--- |
-| **Team** | Qubits To Intelligence |
-| **Team ID** | VTU-QFF-HC-0120 |
+| **Team** | CLAUDE PLAN |
+| **Team ID** | VTU-QFF-HC-0030 |
 | **Tier** | Online |
 | **Repository** | [vtu-hc-qubits-to-intelligence](https://github.com/vtu-qiskit-fall-fest-2026/vtu-hc-qubits-to-intelligence.git) |
 | **Organisation** | [vtu-qiskit-fall-fest-2026](https://github.com/vtu-qiskit-fall-fest-2026) |
@@ -405,9 +405,13 @@ git branch -d feature/my-feature
 
 ## 📄 License & Attribution
 
-This project is authored and submitted by **Narasimha Kulkarni** for the **VTU-Qiskit Fall Fest Hackathon 2026** (VTU Belagavi in association with IBM Quantum).
+This project is authored and submitted by **CLAUDE PLAN** for the **VTU-Qiskit Fall Fest Hackathon 2026** (VTU Belagavi in association with IBM Quantum).
 
-All code, documentation, and research are copyright © 2026 and licensed under the [](LICENSE).
+All research code, quantum circuit designs, and documentation are copyright © 2026 by:
+- **Narasimha Kulkarni** (Team Lead)
+- **Kartik Dhamanekar** (Developer)
+
+Licensed for academic review, hackathon evaluation, and research purposes under VTU-QFF 2026 guidelines. Released under the [MIT License](LICENSE). See [LICENSE](LICENSE) for details.
 
 ---
 
