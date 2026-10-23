@@ -40,11 +40,13 @@ env/
 *.streamlit.run
 
 # Models and data
-models/*.pkl
-models/*_scaler.pkl
-models/*_metadata.json
-results/*.json
-results/*.csv
+# For Streamlit Cloud deployment, we need to commit trained models
+# Uncomment these lines if you want to exclude local models
+# models/*.pkl
+# models/*_scaler.pkl
+# models/*_metadata.json
+# results/*.json
+# results/*.csv
 data/*.csv
 
 # Except for sample data (small, safe to commit)

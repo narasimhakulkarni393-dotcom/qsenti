@@ -1,0 +1,19 @@
+{
+  "feature_names": [
+    "url_length",
+    "hostname_length",
+    "num_dots",
+    "num_hyphens",
+    "num_digits",
+    "num_special_chars",
+    "num_at_signs",
+    "is_ip_address",
+    "has_https",
+    "num_path_separators",
+    "num_query_params",
+    "unusual_port"
+  ],
+  "training_timestamp": "2026-10-23T12:03:03.149685",
+  "n_estimators": 100,
+  "random_state": 42
+}
