@@ -1,0 +1,12 @@
+{
+  "buildCommand": "pip install -r requirements.txt",
+  "outputDirectory": ".",
+  "framework": "python",
+  "runtime": "python3.9",
+  "functions": {
+    "api/predict.py": {
+      "memory": 3008,
+      "maxDuration": 30
+    }
+  }
+}
