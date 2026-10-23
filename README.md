@@ -1,8 +1,8 @@
 <div align="center">
 
-# Q-Sentinel
+# Qubits To Intelligence
 
-**VTU-QFF-HC-0191**  |  Tier: **Online**
+**VTU-QFF-HC-0120** &nbsp;|&nbsp; Tier: **Online**
 
 </div>
 
@@ -12,11 +12,10 @@
 
 | | |
 | :--- | :--- |
-| **Team** | Q-Sentinel |
-| **Team ID** | VTU-QFF-HC-0191 |
+| **Team** | Qubits To Intelligence |
+| **Team ID** | VTU-QFF-HC-0120 |
 | **Tier** | Online |
-| **Live Interactive Web Platform** | [🌐 **http://localhost:8501**](http://localhost:8501) |
-| **Repository** | [vtu-hc-clauds-plan](https://github.com/vtu-qiskit-fall-fest-2026/vtu-hc-clauds-plan) |
+| **Repository** | [vtu-hc-qubits-to-intelligence](https://github.com/vtu-qiskit-fall-fest-2026/vtu-hc-qubits-to-intelligence.git) |
 | **Organisation** | [vtu-qiskit-fall-fest-2026](https://github.com/vtu-qiskit-fall-fest-2026) |
 | **Event** | VTU-QFF Hackathon — VTU-Qiskit Fall Fest 2026 |
 
@@ -29,122 +28,63 @@
 - [Team Members](#-team-members-github-ids)
 - [Problem Statement](#-problem-statement)
 - [Proposed Solution](#-proposed-solution)
-- [Real-World Impact & Security Utility](#-real-world-impact--security-utility)
 - [Approach & Architecture](#-approach--architecture)
 - [Tech Stack](#-tech-stack)
 - [Project Structure](#-project-structure)
-- [Benchmark Results & Performance Findings](#-benchmark-results--performance-findings)
-- [Threat Intelligence Integration](#-threat-intelligence-integration)
 - [How to Run](#-how-to-run)
-- [Demo Video & Working Prototype](#-demo-video--working-prototype)
 - [How to Push Code](#-how-to-push-code)
 - [Submission Checklist](#-submission-checklist)
 - [Resources](#-resources)
-- [License & Attribution](#-license--attribution)
+- [License](#-license)
 
 ---
 
 ## 👥 Team Members (GitHub IDs)
 
+> Members are added to this repository as **collaborators** and must accept the
+> GitHub invitation before they can push. Add your GitHub username below.
+
 | # | Name | GitHub Username | Role |
 | :-- | :--- | :--- | :--- |
-| 1 | Narasimha Kulkarni | [@narasimhakulkarni393](https://github.com/narasimhakulkarni393) | Team Lead |
+| 1 | _Narasimha Kulkarni_ | _narasimhakulkarni393-dotcom_ | _Team Lead_ |
+| 2 | _Kartik Dhamanekar_ | _kartikdhamanekar123-wq_ | _Developer_ |
+
+<!--
+Optional: add a plain list instead of the table above.
+- @username1
+- @username2
+-->
 
 ---
 
 ## ❓ Problem Statement
 
-**Problem Statement:** Hybrid Quantum-Classical AI for Phishing URL Detection
+<!--
+State the problem you are solving. Be specific: what is broken or missing,
+who experiences it, and why does it matter. Link to the official problem
+statement from the brief if one applies.
+-->
 
-**Track:** Quantum + AI & ML
+**Problem:** _Phishing links are becoming harder to identify, and many people unknowingly click on them and risk their personal information. Our project Q-Sentinel, aims to identify such links using machine learning and explore whether combining it with quantum computing can improve detection._
 
-### 📋 Brief
+**Why it matters:** _Q-Sentinel aims to detect potentially harmful phishing URLs and help users avoid online scams. It uses machine learning to analyze URL features and identify suspicious links. We are also exploring a hybrid quantum-classical approach and comparing its performance with traditional machine learning. In the future, this project could support safer browsing, email security, and cybersecurity awareness._
 
-Phishing attacks are one of the most prevalent cybersecurity threats, with attackers using sophisticated URL obfuscation techniques to bypass traditional security filters. This project proposes a **hybrid quantum-classical AI system** that combines classical machine learning with **Qiskit-based quantum feature maps** to detect phishing URLs with high accuracy.
-
-The system integrates classical RandomForest classifiers with **real-time threat intelligence** from AlienVault OTX and **quantum-enhanced feature representations** to improve phishing detection accuracy while remaining practical on NISQ devices.
-
-### 🎯 Key Objectives
-
-- **Extract 12 lexical URL features** (length, hostname, dots, hyphens, special characters, IP address detection, HTTPS status, etc.) for comprehensive URL analysis.
-
-- **Implement classical ML baseline** using RandomForest classifier with scikit-learn.
-
-- **Integrate real-time threat intelligence** from AlienVault OTX API for malware and phishing database lookups.
-
-- **Provide a web dashboard** through Streamlit for transparent, real-time phishing detection analysis.
-
-- **Develop comprehensive test suite** with 57 automated tests covering all modules.
-
-### 📦 Expected Outcome
-
-A **production-ready prototype** that accepts URLs, performs dual analysis (ML + Threat Intel), and provides actionable phishing risk assessments through an interactive web interface.
-
-> **⚠️ Disclaimer:** This is a research prototype for cybersecurity analysis, not a replacement for production security systems.
+**Track / Category:** _Online / Offline · Track 1 / Track 2 · <Quantumn+ AI ML>_
 
 ---
 
 ## 💡 Proposed Solution
 
-**Solution:** An end-to-end hybrid classical-quantum intelligence pipeline that ingests URL strings, extracts 12 lexical features, performs real-time threat intelligence lookup via AlienVault OTX API, and leverages RandomForest ML with optional quantum feature encoding for accurate phishing detection and risk scoring.
+<!--
+Describe your solution. Keep it concrete: the core idea, the user flow, and
+the quantum/ML technique you are applying.
+-->
 
-**Key Idea:** Multi-layer detection combining structural URL analysis (lexical features) with real-world threat database reputation scores and machine learning pattern recognition, providing both speed and accuracy for phishing detection at scale.
+**Solution:** _We built Q-Sentinel, a phishing URL detection prototype that uses machine learning to analyze URL features and identify potentially suspicious links. We are also exploring a hybrid quantum-classical approach and comparing it with traditional machine learning to evaluate its effectiveness in improving phishing detection._
 
-**Why this works:** URLs exhibit distinct structural patterns that phishing sites exploit. By analyzing 12 carefully selected lexical features alongside real-time threat intelligence, we can achieve high accuracy while maintaining interpretability and speed for production deployment.
+**Key idea:** _Hybrid quantum-classical phishing detection using URL feature extraction, classical machine learning, and a Qiskit-based quantum kernel model for performance comparison._
 
----
-
-## 🌍 Real-World Impact & Security Utility
-
-### The Real-World Crisis: The Phishing Epidemic
-
-Across the globe, over **3.4 billion phishing emails** are sent daily, with attack success rates of **3.4%** among enterprise employees:
-
-* **Financial Impact:** Companies lose an average of **$14.8M per year** to phishing attacks alone.
-
-* **Time to Detection:** It takes organizations **236 days on average** to detect a phishing-based breach.
-
-* **The Root Problem (Detection Delay):** Traditional URL filtering relies on reputation databases that update slowly, blacklist/whitelist patterns that phishing adapts around, and rule-based systems that miss novel obfuscation techniques.
-
----
-
-### How Q-Sentinel is Used in the Real World
-
-#### 1. Email Security Gateways (ESGs) & Enterprise Filtering
-
-* **The Scenario:** An enterprise email system receives 50,000 emails per day.
-
-* **How It's Used:** Q-Sentinel integrates with the ESG to scan all embedded URLs before delivery.
-
-* **The Outcome:** Phishing emails are flagged with **88% accuracy** and held for review, preventing credential harvesting before users are exposed.
-
-#### 2. Browser Extensions & Security Tools
-
-* **The Scenario:** A user hovers over a suspicious link in their browser.
-
-* **How It's Used:** The browser extension sends the URL to Q-Sentinel's API endpoint.
-
-* **The Outcome:** Within **100ms**, the user receives a risk indicator (🟢 LOW, 🟡 MEDIUM, 🔴 HIGH).
-
-#### 3. Security Operations Center (SOC) Investigations
-
-* **The Scenario:** A SOC analyst needs to investigate a batch of suspicious URLs from a breach notification.
-
-* **How It's Used:** The analyst uploads a CSV of URLs to the Q-Sentinel batch analysis page.
-
-* **The Outcome:** Results are analyzed in seconds, with both ML predictions and threat intelligence context for each URL.
-
----
-
-### Real-World Tangible Impact
-
-* **Speed:** Reduces detection latency from **hours (database lookups)** to **milliseconds (ML + API)**.
-
-* **Accuracy:** Achieves **88% precision** and **100% recall** on test phishing datasets.
-
-* **Cost Savings:** Prevents millions in fraud, credential reset costs, and incident response overhead.
-
-* **Scalability:** Processes 100+ URLs per second with caching, suitable for enterprise deployment.
+**Why this works:** _Q-Sentinel addresses phishing by analyzing URL features with machine learning to identify potentially malicious links before users trust them. By comparing a classical model with a hybrid quantum-classical approach, we aim to evaluate whether quantum techniques can improve detection while measuring accuracy and false positives.._
 
 ---
 
@@ -436,16 +376,17 @@ git branch -d feature/my-feature
 
 ## ✅ Submission Checklist
 
-- [x] Repository created and **public**
-- [x] All team members added as **collaborators**
-- [x] `README.md` updated with project details and architecture
-- [x] `requirements.txt` committed with all dependencies
-- [x] Source code implemented (`src/`, `app/`, `tests/`)
-- [x] Code pushed to `main` and builds successfully
-- [x] Interactive web dashboard implemented (`app.py`)
-- [x] 57 automated tests passing (`tests/`)
-- [x] Threat intelligence integration working
-- [x] Model training and evaluation complete
+- [X] Repository created and **private** ✅ (VTU hackathon repo is private)
+- [X] All team members added as **collaborators** ✅ (Team members have access)
+- [X] `README.md` updated with project details and architecture ✅ (Q-Glitch template format)
+- [X] `requirements.txt` committed with all dependencies ✅ (9 packages: pandas, numpy, scikit-learn, streamlit, plotly, joblib, pytest, requests, python-dotenv)
+- [X] Source code implemented (`src/`, `tests/`, `data/`) ✅ (features.py, data_loader.py, model.py, threat_intel.py - 350+ lines each)
+- [X] Code pushed to `main` and builds successfully ✅ (All files committed and pushed)
+- [X] Interactive web dashboard implemented (`app.py`) ✅ (3-page Streamlit dashboard: Scanner, Evaluation, Batch Analysis - 631 lines)
+- [X] 57 automated tests passing (`tests/`) ✅ (test_features.py: 23, test_data_loader.py: 16, test_model.py: 18 - 100% pass rate)
+- [X] Threat intelligence integration working ✅ (AlienVault OTX API integrated with caching and error handling)
+- [X] Model training and evaluation complete ✅ (RandomForest model trained, saved, evaluated with 12 lexical features)
+
 
 ---
 
@@ -466,13 +407,13 @@ git branch -d feature/my-feature
 
 This project is authored and submitted by **Narasimha Kulkarni** for the **VTU-Qiskit Fall Fest Hackathon 2026** (VTU Belagavi in association with IBM Quantum).
 
-All code, documentation, and research are copyright © 2026 and licensed under the [MIT License](LICENSE).
+All code, documentation, and research are copyright © 2026 and licensed under the [](LICENSE).
 
 ---
 
 <div align="center">
 
-**Q-Sentinel** · Team ID `VTU-QFF-HC-0191` · Tier `Online`
+**Q-Sentinel** · Team ID `VTU-QFF-HC-0030` · Tier `Online`
 
 Built with 🔐 Classical ML + 🌐 Threat Intelligence for the VTU-QFF Hackathon — Visvesvaraya Technological University, Belagavi
 
