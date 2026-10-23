@@ -35,7 +35,7 @@
 - [How to Push Code](#-how-to-push-code)
 - [Submission Checklist](#-submission-checklist)
 - [Resources](#-resources)
-- [License](#-license)
+- [License & Attribution](#-license-&-attribution)
 
 ---
 
